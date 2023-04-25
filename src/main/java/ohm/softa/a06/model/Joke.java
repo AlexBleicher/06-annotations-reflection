@@ -11,13 +11,13 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
  */
 public final class Joke {
 	@SerializedName("id")
-	private int number;
-	@SerializedName("joke")
+	private String number;
+	@SerializedName("value")
 	private String content;
 	@SerializedName("categories")
 	private String[] rubrics;
 
-	public int getNumber() {
+	public String getNumber() {
 		return number;
 	}
 
@@ -29,7 +29,7 @@ public final class Joke {
 		return rubrics;
 	}
 
-	public void setNumber(int number) {
+	public void setNumber(String number) {
 		this.number = number;
 	}
 
